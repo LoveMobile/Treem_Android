@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/light_gray"
+              android:orientation="vertical"
+              tools:context="com.treem.treem.activities.settings.SettingsTreeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/settings_tree_row_height"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/main_margin_h"
+        android:paddingLeft="@dimen/main_margin_h"
+        android:paddingRight="@dimen/main_margin_h"
+        android:paddingStart="@dimen/main_margin_h">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textPushTitle"
+                style="@style/StyleSettingsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_tree_push_notifications_title"/>
+
+            <TextView
+                android:id="@+id/textPushSubtitle"
+                style="@style/StyleSettingsSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/settings_tree_push_notifications_subtitle"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switchPush"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:theme="@style/StyleSwitchDark"
+                android:layout_gravity="center"/>
+
+            <ProgressBar
+                android:indeterminate="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressPush"
+                android:theme="@style/DarkProgressBar"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

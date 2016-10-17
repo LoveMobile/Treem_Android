@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<declare-styleable name="HexagonButton">
+
+		<!-- Minimum size of the text. -->
+		<attr name="minTextSize" format="dimension"/>
+
+		<!-- Defines whether to automatically resize text to fit to the view's bounds. -->
+		<attr name="sizeToFit" format="boolean"/>
+
+		<!-- Icon to show on the button. -->
+		<attr name="image" format="reference"/>
+
+		<attr name="strokeColor" format="color"/>
+
+		<attr name="strokeWidth" format="dimension"/>
+
+		<attr name="shapeColor" format="color"/>
+		<attr name="shapeTintColor" format="color"/>
+
+		<attr name="shapeGradientColorStart" format="color"/>
+		<attr name="shapeGradientColorEnd" format="color"/>
+
+		<attr name="shapeGradientTintColorStart" format="color"/>
+		<attr name="shapeGradientTintColorEnd" format="color"/>
+
+	</declare-styleable>
+
+	<declare-styleable name="HexagonGridLayout">
+
+		<attr name="radius" format="dimension"/>
+
+		<attr name="gridWidth" format="integer"/>
+
+		<attr name="gridHeight" format="integer"/>
+
+		<attr name="offset" format="dimension"/>
+
+	</declare-styleable>
+
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <plurals name="rewards_points">
+        <item quantity="one">point</item>
+        <item quantity="other">points</item>
+    </plurals>
+    <string name="reward_not_money" tools:ignore="Typos">Only the top 20%% of Treem members are eligible to earn financial rewards. Unfortunately, you are not \"in the money\" at %d%%. Get working, invite new friends, post more, maybe invite your mom to join (ok now we are getting crazy).\nRemember that only those in the top 80th percentile are rewarded when Treem goes public</string>
+    <string name="reward_in_money" tools:ignore="Typos">Only the top 20%% of Treem members are eligible to earn financial rewards. Congratulations, you are \"in the money\" at %d%%. Get working, invite new friends, post more, maybe invite your mom to join (ok now we are getting crazy).\nRemember that only those in the top 80th percentile are rewarded when Treem goes public</string>
+    <string name="reward_top_ranked_friends">Top Ranked Friends</string>
+    <string name="reward_add_friends">+ Find New Friends</string>
+    <string name="failed_load_user_equity_data">Failed to load user\'s equity data</string>
+    <dimen name="reward_no_friends_text_size">16sp</dimen>
+    <string name="reward_30_days">30 days</string>
+    <string name="reward_all_time">All time</string>
+    <string name="toolbar_title_rewards">Rewards</string>
+    <string name="reward_daily_points_earned">Points Earned</string>
+    <string name="reward_friend_points">%d pts</string>
+    <string name="reward_friend_percents">%d</string>
+    <string name="reward_no_friends">You have no friends</string>
+    <string name="failed_load_data">Failed to load data</string>
+
+</resources>

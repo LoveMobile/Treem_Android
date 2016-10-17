@@ -1,0 +1,475 @@
+<resources>
+	<!-- App Theme - Api versions until next defined version number -->
+	<style name="AppTheme" parent="BaseTheme">
+		<!-- Nothing specific for lower versions... yet -->
+	</style>
+
+	<style name="AppTheme.DarkStatus" parent="BaseTheme">
+		<!-- Nothing specific for lower versions... yet -->
+	</style>
+
+	<!-- Base Treem App theme - All API versions -->
+	<style name="BaseTheme" parent="Theme.AppCompat">
+		<!-- Window Styles -->
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowActionBar">false</item>
+		<item name="windowNoTitle">true</item>
+		<item name="windowActionBar">false</item>
+		<item name="android:windowFullscreen">false</item>
+
+		<item name="android:buttonStyle">@style/ButtonTheme</item>
+		<item name="buttonStyle">@style/ButtonTheme</item>
+	</style>
+
+	<style name="AppTheme.Transparent" parent="@style/AppTheme.TransparentBase"/>
+
+	<style name="DarkProgressBar" parent="Theme.AppCompat">
+		<item name="colorControlActivated">@color/dark_gray</item>
+	</style>
+
+	<style name="AppTheme.TransparentBase" parent="AppTheme">
+		<item name="android:windowIsTranslucent">true</item>
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:backgroundDimEnabled">true</item>
+		<item name="android:backgroundDimAmount">0.8</item>
+	</style>
+
+	<style name="AppTheme.Dialog" parent="Theme.AppCompat.Light.Dialog">
+		<item name="android:buttonStyle">@style/ButtonTheme</item>
+		<item name="buttonStyle">@style/ButtonTheme</item>
+	</style>
+
+	<style name="HelpText" parent="@android:style/TextAppearance">
+		<item name="android:textColor">#81887F</item>
+		<item name="android:textStyle">italic</item>
+		<item name="android:textSize">13sp</item>
+	</style>
+
+    <style name="ButtonTheme">
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.6</item>
+        <item name="android:textColor">@color/tint_color</item>
+    </style>
+    <style name="ButtonThemeGray">
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.6</item>
+        <item name="android:textColor">@color/mid_gray</item>
+    </style>
+
+	<style name="ButtonSubmitTheme" parent="ButtonTheme">
+		<item name="android:background">@drawable/selector_default_button_background</item>
+		<item name="android:textColor">@drawable/selector_default_button_text</item>
+	</style>
+
+	<!-- user registration screen styles -->
+	<style name="StyleEditUserParam" parent="@style/Widget.AppCompat.EditText">
+		<item name="android:background">@drawable/selector_edit_white</item>
+		<item name="android:paddingLeft">8dp</item>
+		<item name="android:paddingRight">8dp</item>
+		<item name="android:minHeight">38dp</item>
+		<item name="android:textColorHint">@color/mid_gray</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:lines">1</item>
+		<item name="android:textColor">@color/dark_gray</item>
+		<item name="android:maxLines">1</item>
+	</style>
+
+	<style name="StyleLabelUserParam" parent="android:Widget.TextView">
+		<item name="android:textColor">@color/white</item>
+		<item name="android:textSize">18sp</item>
+		<item name="android:layout_marginTop">4dp</item>
+		<item name="android:layout_marginBottom">4dp</item>
+	</style>
+
+	<style name="StyleErrorUserParam" parent="android:Widget.TextView">
+		<item name="android:textColor">@color/error_text</item>
+		<item name="android:textSize">12sp</item>
+		<item name="android:layout_marginBottom">2dp</item>
+	</style>
+
+	<style name="StyleTextUserValue" parent="@android:style/Widget.TextView">
+		<item name="android:minHeight">32dp</item>
+		<item name="android:textColor">@color/selector_text_color</item>
+		<item name="android:textSize">16sp</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:lines">1</item>
+		<item name="android:maxLines">1</item>
+	</style>
+
+	<style name="StyleToolbarTitle" parent="@android:style/Widget.TextView">
+		<item name="android:textColor">@color/toolbar_text_color</item>
+		<item name="android:textSize">@dimen/toolbar_text_size</item>
+		<item name="android:gravity">center_horizontal</item>
+	</style>
+
+	<style name="SettingsMenuTextAppearance" parent="TextAppearance.AppCompat">
+		<item name="android:textSize">@dimen/settings_row_text_size</item>
+		<item name="android:textColor">@color/dark_gray</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="SelectableLightItem">
+		<item name="colorControlHighlight">@color/mid_gray</item>
+	</style>
+
+	<style name="SelectableItemBackground">
+		<item name="android:theme">@style/SelectableLightItem</item>
+		<item name="android:background">?attr/selectableItemBackground</item>
+	</style>
+
+	<style name="AlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+		<item name="colorAccent">@color/colorAccent</item>
+		<item name="textColorAlertDialogListItem">@android:color/white</item>
+	</style>
+
+	<style name="StyleSettingsTitle" parent="@android:style/Widget.TextView">
+		<item name="android:textColor">@color/dark_gray</item>
+		<item name="android:textSize">@dimen/settings_title_size</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="StyleSettingsSubtitle" parent="@android:style/Widget.TextView">
+		<item name="android:textColor">@color/mid_gray</item>
+		<item name="android:textSize">@dimen/settings_subtitle_size</item>
+	</style>
+
+	<style name="StyleSwitchDark" parent="Widget.AppCompat.CompoundButton.Switch">
+		<item name="android:colorForeground">@color/mid_gray</item>
+	</style>
+
+	<style name="StyleTextChange" parent="@android:style/Widget.TextView">
+		<item name="android:textColor">@color/dark_gray</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textAllCaps">false</item>
+	</style>
+
+	<style name="StyleTextProfileButton" parent="@android:style/Widget.TextView">
+		<item name="android:textColor">@color/tint_color</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textAllCaps">false</item>
+	</style>
+
+	<style name="RewardBarLabel" parent="@android:style/Widget.TextView">
+		<item name="android:textColor">@color/dark_gray</item>
+		<item name="android:textSize">14sp</item>
+	</style>
+
+	<style name="StyleRewardPercent" parent="@android:style/Widget.TextView">
+		<item name="android:textColor">@color/dark_gray</item>
+		<item name="android:textSize">@dimen/reward_percent_size</item>
+		<item name="android:layout_marginTop">-6dp</item>
+	</style>
+
+	<style name="StyleRewardPercentValue" parent="@android:style/Widget.TextView">
+		<item name="android:textColor">@color/dark_gray</item>
+		<item name="android:textSize">@dimen/reward_percent_value_size</item>
+	</style>
+
+	<style name="StyleRewardPoints" parent="@android:style/Widget.TextView">
+		<item name="android:textColor">@color/dark_gray</item>
+		<item name="android:textSize">@dimen/reward_title_text_size</item>
+	</style>
+
+
+	<style name="StyleRewardDescription" parent="@android:style/Widget.TextView">
+		<item name="android:textColor">@color/dark_gray</item>
+		<item name="android:textSize">@dimen/reward_description_text_size</item>
+	</style>
+
+	<style name="StyleRewardTitle" parent="@android:style/Widget.TextView">
+		<item name="android:textColor">@color/dark_gray</item>
+		<item name="android:textSize">@dimen/reward_title_text_size</item>
+	</style>
+
+	<style name="StyleChart" parent="@style/APDefacto.Light">
+		<item name="android:background">@color/white</item>
+		<item name="backgroundColor">@color/white</item>
+		<item name="graphBackgroundColor">@color/white</item>
+		<item name="gridBackgroundColor">@color/white</item>
+		<item name="graphDomainLineColor">@color/mid_gray</item>
+		<item name="graphRangeLineColor">@color/mid_gray</item>
+		<item name="gridPaddingTop">10dp</item>
+		<item name="gridPaddingBottom">10dp</item>
+		<item name="gridPaddingLeft">5dp</item>
+		<item name="gridPaddingRight">15dp</item>
+		<item name="rangeLabelTextSize">10sp</item>
+		<item name="domainLabelTextSize">10sp</item>
+		<item name="graphMarginTop">0dp</item>
+		<item name="graphMarginBottom">0dp</item>
+		<item name="graphMarginLeft">0dp</item>
+		<item name="graphMarginRight">0dp</item>
+		<item name="gridMarginTop">0dp</item>
+		<item name="gridMarginBottom">0dp</item>
+		<item name="gridMarginLeft">0dp</item>
+		<item name="gridMarginRight">0dp</item>
+
+		<item name="graphDomainLineThickness">1dp</item>
+		<item name="graphRangeLineThickness">1dp</item>
+		<item name="rangeTickLabelTextSize">10sp</item>
+		<item name="rangeOriginTickLabelTextSize">10sp</item>
+		<item name="domainTickLabelTextSize">10sp</item>
+		<item name="domainOriginTickLabelTextSize">10sp</item>
+		<item name="borderColor">@android:color/transparent</item>
+		<item name="borderThickness">0dp</item>
+	</style>
+
+	<style name="StyleRewardFriend" parent="@android:style/Widget.TextView">
+		<item name="android:textColor">@color/dark_gray</item>
+		<item name="android:textSize">@dimen/reward_friends_text_size</item>
+	</style>
+
+	<style name="StyleNoFriends" parent="@android:style/Widget.TextView">
+		<item name="android:textColor">@color/mid_gray</item>
+		<item name="android:textSize">@dimen/reward_no_friends_text_size</item>
+		<item name="android:gravity">center_horizontal</item>
+	</style>
+
+	<style name="StyleNoItems" parent="@android:style/Widget.TextView">
+		<item name="android:textColor">@color/dark_gray</item>
+		<item name="android:textSize">@dimen/no_items_text_size</item>
+		<item name="android:gravity">center_horizontal</item>
+	</style>
+
+	<style name="StyleSessionExpiredMessage" parent="@android:style/Widget.TextView">
+		<item name="android:textColor">@color/dark_gray</item>
+		<item name="android:textSize">@dimen/settings_row_text_size</item>
+	</style>
+
+	<style name="StyleAlertDate" parent="@android:style/Widget.TextView">
+		<item name="android:textColor">@color/mid_gray</item>
+		<item name="android:textSize">@dimen/alert_small_text_size</item>
+	</style>
+
+	<style name="StyleAlertReadMark" parent="@android:style/Widget.TextView">
+		<item name="android:textColor">@color/colorAccent</item>
+		<item name="android:textSize">@dimen/alert_small_text_size</item>
+	</style>
+
+	<style name="StyleAlertDescription" parent="@android:style/Widget.TextView">
+		<item name="android:textColor">@color/dark_gray</item>
+		<item name="android:textSize">@dimen/alert_big_text_size</item>
+		<item name="android:maxLines">2</item>
+		<item name="android:ellipsize">end</item>
+	</style>
+
+	<style name="AlertButtonAccept" parent="Widget.AppCompat.Button">
+		<item name="android:textAllCaps">false</item>
+		<item name="android:textColor">@color/white</item>
+		<item name="backgroundTint">@color/dark_gray</item>
+	</style>
+
+	<style name="AlertButtonDecline" parent="Widget.AppCompat.Button">
+		<item name="android:textAllCaps">false</item>
+		<item name="android:textColor">@color/mid_gray</item>
+		<item name="backgroundTint">@color/mid_light_gray</item>
+	</style>
+
+	<style name="StyleRewardsRadio" parent="Widget.AppCompat.CompoundButton.RadioButton">
+		<item name="android:background">@drawable/selector_radio_button</item>
+		<item name="android:textColor">@color/reward_radio_text_color</item>
+		<item name="android:textSize">@dimen/reward_radio_text_size</item>
+		<item name="android:button">@null</item>
+	</style>
+
+	<style name="StyleProfileName" parent="@android:style/Widget.TextView">
+		<item name="android:textColor">@color/dark_gray</item>
+		<item name="android:textSize">@dimen/profile_name_text_size</item>
+		<item name="android:maxLines">1</item>
+		<item name="android:ellipsize">end</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="StyleProfileUsername" parent="@android:style/Widget.TextView">
+		<item name="android:textColor">@color/dark_gray</item>
+		<item name="android:textSize">@dimen/profile_username_text_size</item>
+		<item name="android:maxLines">1</item>
+		<item name="android:ellipsize">end</item>
+	</style>
+
+	<style name="StyleProfileParamLabel" parent="@android:style/Widget.TextView">
+		<item name="android:textColor">@color/dark_gray</item>
+		<item name="android:textSize">@dimen/profile_param_text_size</item>
+		<item name="android:maxLines">1</item>
+		<item name="android:ellipsize">end</item>
+	</style>
+
+	<style name="StyleProfileParamValue" parent="StyleProfileParamLabel">
+	</style>
+
+	<style name="StyleProfileStatusAction" parent="StyleProfileParamLabel">
+		<item name="android:textColor">@color/red</item>
+		<item name="android:theme">@style/SelectableLightItem</item>
+		<item name="android:background">?attr/selectableItemBackground</item>
+	</style>
+
+    <style name="StyleMemberName" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">@dimen/member_standard_text_size</item>
+
+    </style>
+
+    <style name="StyleMemberUsername" parent="@android:style/Widget.TextView">
+
+        <item name="android:textColor">@color/mid_dark_gray</item>
+        <item name="android:textSize">@dimen/member_small_text_size</item>
+
+    </style>
+
+    <style name="StyleMemberPhone" parent="StyleMemberUsername">
+        <item name="android:textColor">@color/mid_dark_gray</item>
+    </style>
+
+    <style name="StyleMemberContactName" parent="StyleMemberUsername">
+        <item name="android:textColor">@color/mid_gray</item>
+    </style>
+
+    <style name="StyleMembersText" parent="@android:style/Widget.TextView">
+
+        <item name="android:textColor">@color/mid_dark_gray</item>
+        <item name="android:textSize">@dimen/members_panel_text_size</item>
+
+
+    </style>
+
+
+    <style name="StyleMembersNotFound" parent="@android:style/Widget.TextView">
+
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">@dimen/members_not_found_text_size</item>
+
+
+    </style>
+    <style name="StyleMembersNotFoundDark" parent="@style/StyleMembersNotFound"/>
+
+
+    <style name="StyleMembersNotFoundLight" parent="@style/StyleMembersNotFound">
+        <item name="android:textColor">@color/mid_gray</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="StyleSearchTitle" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">@dimen/search_title_text_size</item>
+    </style>
+
+    <style name="StyleSearchSectionTitle" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/mid_gray</item>
+        <item name="android:textSize">@dimen/search_section_title_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="StyleSearchParam" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">@dimen/search_param_text_size</item>
+    </style>
+    <style name="BranchActionButton" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="StyleNoFeeds" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/feeds_no_feeds</item>
+    </style>
+
+    <style name="StyleNoFeedsDescription" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/feeds_no_feeds_desc</item>
+    </style>
+
+    <style name="StylePostName" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">@dimen/post_name_text_size</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="StylePostDate" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/mid_gray</item>
+        <item name="android:textSize">@dimen/post_date_text_size</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="StylePostText" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">@dimen/post_msg_text_size</item>
+    </style>
+
+    <style name="StylePostButtonText" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/mid_gray</item>
+        <item name="android:textSize">@dimen/post_button_text_size</item>
+        <item name="android:lines">1</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="StylePostReact" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/post_react_text_size</item>
+    </style>
+
+    <style name="StylePostTagged" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/post_tagged_text_size</item>
+        <item name="android:textColor">@color/mid_dark_gray</item>
+    </style>
+
+    <style name="PostLinkTitle" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/post_link_title_text_size</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lines">1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="PostLinkDescription" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/post_link_description_text_size</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="StyleOptionItem" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/option_text_size</item>
+        <item name="android:textColor">@color/option_tint</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <dimen name="feeds_no_feeds">16sp</dimen>
+    <dimen name="feeds_no_feeds_desc">12sp</dimen>
+    <dimen name="post_name_text_size">14sp</dimen>
+    <dimen name="post_date_text_size">12sp</dimen>
+    <dimen name="post_msg_text_size">16sp</dimen>
+    <dimen name="post_button_text_size">12sp</dimen>
+    <dimen name="post_react_text_size">10sp</dimen>
+    <dimen name="post_tagged_text_size">10sp</dimen>
+    <dimen name="post_link_title_text_size">18sp</dimen>
+    <dimen name="post_link_description_text_size">14sp</dimen>
+    <dimen name="option_text_size">16sp</dimen>
+</resources>

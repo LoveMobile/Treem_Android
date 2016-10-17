@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	android:id="@+id/layoutMainRoot"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	>
+
+	<FrameLayout
+		android:id="@+id/tool_bar_container"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/actionBarSize"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentTop="true">
+
+		<include
+			android:id="@+id/tool_bar"
+			layout="@layout/tool_bar_account"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/actionBarSize"/>
+
+	</FrameLayout>
+
+	<android.support.v4.view.ViewPager
+		android:id="@+id/mainViewPager"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_above="@+id/main_tab_layout_container"
+		android:layout_below="@+id/tool_bar_container"/>
+
+	<FrameLayout
+		android:id="@+id/main_tab_layout_container"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true">
+
+		<android.support.design.widget.TabLayout
+			android:id="@+id/mainTablayout"
+			android:layout_width="match_parent"
+			android:layout_height="53dp"
+			app:tabIndicatorHeight="0dp"
+			app:tabIndicatorColor="@android:color/transparent"
+			android:layout_alignParentBottom="true"
+			android:background="@color/ColorPrimaryBar"/>
+
+	</FrameLayout>
+
+
+	<FrameLayout
+		android:id="@+id/add_branch_container"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/tool_bar_container"/>
+
+
+</RelativeLayout>

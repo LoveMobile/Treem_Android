@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:orientation="vertical">
+
+	<HorizontalScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="10dp"
+		android:layout_marginLeft="7dp"
+		android:layout_marginRight="7dp"
+		android:layout_marginTop="10dp"
+		android:scrollbars="none">
+
+		<RadioGroup
+			android:id="@+id/branch_color_options"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"/>
+
+	</HorizontalScrollView>
+
+	<EditText
+		android:id="@+id/branch_name"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:background="@drawable/branch_name_field_background"
+		android:hint="@string/enter_branch_name"
+		android:inputType="textCapSentences"
+		android:singleLine="true"
+		android:textColor="@android:color/black"
+		android:textColorHint="#cbcbd1"/>
+
+	<LinearLayout
+		android:id="@+id/action_buttons"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<Button
+			android:id="@+id/save_action"
+			style="@style/Widget.AppCompat.Button"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="@android:color/transparent"
+			android:enabled="false"
+			android:text="@string/save"
+			android:textAllCaps="false"
+			android:textColor="@color/save_branch_button_text_color"/>
+
+		<Button
+			android:id="@+id/cancel_action"
+			style="@style/Widget.AppCompat.Button"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="@android:color/transparent"
+			android:text="@string/cancel"
+			android:textAllCaps="false"
+			android:textColor="#aeb0ae"/>
+
+	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/postTextRoot"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/post_margin_v"
+    android:paddingEnd="@dimen/main_margin_h"
+    android:paddingLeft="@dimen/main_margin_h"
+    android:paddingRight="@dimen/main_margin_h"
+    android:paddingStart="@dimen/main_margin_h"
+    android:paddingTop="@dimen/post_margin_v">
+
+    <TextView
+        android:id="@+id/postText"
+        style="@style/StylePostText"
+        android:autoLink="all"
+        android:linksClickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</FrameLayout>

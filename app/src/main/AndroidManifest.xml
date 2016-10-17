@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.treem.treem"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- Needs to search members within contacts -->
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+    <!-- Needs to take images from gallery and camera -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".application.ApplicationMain"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.main.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.DarkStatus">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.branch.BranchActivity"/>
+        <activity android:name=".activities.media.MediaActivity"/>
+        <activity android:name=".activities.media.ImageViewActivity"/>
+        <activity
+            android:name=".activities.signup.phone.SignupPhoneActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".activities.signup.SignupQuestionActivity"/>
+        <activity android:name=".activities.signup.SignupRegisterUserActivity"/>
+        <activity
+            android:name=".activities.image.ImageSelectActivity"
+            android:theme="@style/AppTheme.Transparent"/>
+        <activity
+            android:name=".application.SessionExpiredActivity"
+            android:theme="@style/AppTheme.Dialog">
+        </activity>
+        <activity android:name=".activities.settings.ProfileActivity">
+        </activity>
+        <activity android:name=".activities.users.UserProfileActivity">
+        </activity>
+        <activity
+            android:name=".activities.tree.TreeViewActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+        </activity>
+        <activity
+            android:name=".activities.media.VideoViewActivity"
+            android:theme="@style/AppTheme.DarkStatus">
+        </activity>
+        <activity android:name=".activities.branch.members.SearchConfigActivity"/>
+        <activity android:name=".activities.branch.feed.PostOptionsMenuActivity"
+            android:theme="@style/AppTheme.Transparent"/>
+
+        <activity android:name=".activities.tree.SecretTreeLoginActivity"
+                  android:windowSoftInputMode="adjustResize"
+                  android:theme="@style/AppTheme.DarkStatus"/>
+
+        <activity android:name=".activities.pin.SetPinCodeActivity"
+                  android:windowSoftInputMode="adjustResize"
+                  android:theme="@style/AppTheme.DarkStatus"/>
+
+    </application>
+
+</manifest>

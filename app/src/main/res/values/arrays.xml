@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<array name="branch_colors">
+		<item>#434f24</item>
+		<item>#668d3c</item>
+		<item>#4e6172</item>
+		<item>#567fab</item>
+		<item>#d57500</item>
+		<item>#c5b55e</item>
+		<item>#42897f</item>
+		<item>#744c93</item>
+		<item>#ab2020</item>
+		<item>#db6d6a</item>
+		<item>#530624</item>
+	</array>
+
+</resources>

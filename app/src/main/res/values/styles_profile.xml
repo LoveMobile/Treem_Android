@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- user registration screen styles -->
+    <style name="StyleEditProfileParam" parent="@style/Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/selector_edit_white_gray</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:minHeight">38dp</item>
+        <item name="android:textColorHint">@color/mid_gray</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:lines">1</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="StyleLabelProfileParam" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:lines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="StyleErrorProfileParam" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/profile_error_text</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+    </style>
+    <style name="StyleTextProfileValue" parent="@android:style/Widget.TextView">
+        <item name="android:minHeight">32dp</item>
+        <item name="android:textColor">@color/selector_text_color_dark</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="StyleLabelProfileParamLight" parent="@style/StyleLabelProfileParam">
+        <item name="android:textColor">@color/mid_gray</item>
+    </style>
+
+</resources>

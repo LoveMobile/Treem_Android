@@ -1,0 +1,277 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.treem.treem.activities.branch.chat.BranchChatFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="@dimen/main_margin_h"
+        android:layout_marginLeft="@dimen/main_margin_h"
+        android:layout_marginRight="@dimen/main_margin_h"
+        android:layout_marginStart="@dimen/main_margin_h"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <!-- Dummy item to prevent AutoCompleteTextView from receiving focus -->
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_search"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="6dp"
+            android:drawableStart="@drawable/ic_search"
+            android:hint="@string/hint_search_members"
+            android:padding="6dp"
+            android:textColor="@color/dark_gray"
+            android:textColorHint="@color/hint_color"/>
+
+        <ImageButton
+            android:id="@+id/buttonSettings"
+            style="@style/SelectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:padding="4dp"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:src="@drawable/ic_gear_empty"
+            android:tint="@color/tint_color"/>
+
+        <CheckBox
+            android:id="@+id/selectAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/checkbox"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/rootMembersView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/members"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <com.treem.treem.activities.branch.members.MembersPanel
+                android:id="@+id/membersPanel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/dark_gray"
+                android:paddingEnd="@dimen/main_margin_h"
+                android:paddingLeft="@dimen/main_margin_h"
+                android:paddingRight="@dimen/main_margin_h"
+                android:paddingStart="@dimen/main_margin_h"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/panel_members_add_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/members_panel_image_size"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_members"
+                        android:tint="@color/member_panel_gray"/>
+
+                    <TextView
+                        android:id="@+id/panel_members_add_text"
+                        style="@style/StyleMembersText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:text="+0"
+                        tools:ignore="HardcodedText"/>
+
+                    <ImageView
+                        android:id="@+id/panel_members_remove_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/members_panel_image_size"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="4dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/ic_members"
+
+                        android:tint="@color/member_panel_gray"/>
+
+                    <TextView
+                        android:id="@+id/panel_members_remove_text"
+                        style="@style/StyleMembersText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:text="-0"
+                        tools:ignore="HardcodedText"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"/>
+
+                    <Button
+                        android:id="@+id/actionButtonSave"
+                        style="@style/ButtonTheme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="12dp"
+                        android:paddingEnd="16dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingStart="16dp"
+                        android:paddingTop="12dp"
+                        android:text="@string/save"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/member_panel_gray"/>
+
+                    <Button
+                        android:id="@+id/actionButtonCancel"
+                        style="@style/ButtonThemeGray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="12dp"
+                        android:paddingEnd="16dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingStart="16dp"
+                        android:paddingTop="12dp"
+
+                        android:text="@android:string/cancel"/>
+                </LinearLayout>
+
+            </com.treem.treem.activities.branch.members.MembersPanel>
+
+        </LinearLayout>
+
+        <com.treem.treem.activities.branch.members.NoMemberFoundView
+            android:id="@+id/noMembersFound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <ScrollView
+                    android:id="@+id/scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/main_margin_h"
+                        android:layout_marginLeft="@dimen/main_margin_h"
+                        android:layout_marginRight="@dimen/main_margin_h"
+                        android:layout_marginStart="@dimen/main_margin_h"
+
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/StyleMembersNotFoundDark"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/main_margin_v"
+                            android:gravity="center_horizontal"
+                            android:text="@string/members_not_found_main"/>
+
+                        <TextView
+                            style="@style/StyleMembersNotFoundLight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/main_margin_v"
+                            android:gravity="center_horizontal"
+                            android:text="@string/members_not_found_second"/>
+
+                        <TextView
+                            style="@style/StyleLabelProfileParam"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/signup_phone_number"/>
+
+                        <EditText
+                            android:id="@+id/editPhone"
+                            style="@style/StyleEditProfileParam"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/main_margin_v"
+                            android:hint="@string/signup_phone_number_hint"
+                            android:inputType="phone"/>
+                        <FrameLayout
+                            android:id="@+id/member"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone">
+                            <include layout="@layout/members_adapter_data_row"/>
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/inviteButton"
+                        style="@style/ButtonSubmitTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/default_button_height"
+                        android:enabled="false"
+                        android:text="@string/invite"
+                        android:textSize="18sp"/>
+
+                    <ProgressBar
+                        android:id="@+id/progressInvite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:indeterminate="true"
+                        android:theme="@style/DarkProgressBar"
+                        android:visibility="invisible"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+        </com.treem.treem.activities.branch.members.NoMemberFoundView>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingEnd="@dimen/main_margin_h"
+              android:paddingLeft="@dimen/main_margin_h"
+              android:paddingRight="@dimen/main_margin_h"
+              android:paddingStart="@dimen/main_margin_h">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/linkRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/post_margin_v"
+            android:paddingEnd="@dimen/main_margin_h"
+            android:paddingLeft="@dimen/main_margin_h"
+            android:paddingRight="@dimen/main_margin_h"
+            android:paddingStart="@dimen/main_margin_h"
+            android:paddingTop="@dimen/post_margin_v"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/linkTitle"
+                style="@style/PostLinkTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/linkDescription"
+                style="@style/PostLinkDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <ImageView
+                android:id="@+id/linkImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/post_margin_v"
+                android:adjustViewBounds="true"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/Leopard/.gradle/caches/modules-2/files-2.1/com.github.scribejava/scribejava-core/2.2.2/f4a2e76ecd3023ebf0949371c5e414fe01e2391a/scribejava-core-2.2.2.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="f4a2e76ecd3023ebf0949371c5e414fe01e2391a">
+        <dex dex="/Volumes/Data/Work/Outsourced/Treem-Android/Source/app/build/intermediates/pre-dexed/debug/scribejava-core-2.2.2_39958ce9bec6228ececab94fe58e22fa224a4706.jar" />
+    </item>
+    <item
+        jar="/Volumes/Data/Work/Outsourced/Treem-Android/Source/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/Volumes/Data/Work/Outsourced/Treem-Android/Source/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_878b19dedd60e7797db94c577b68974459b103aa.jar" />
+    </item>
+    <item
+        jar="/Volumes/Data/Work/Outsourced/Treem-Android/Source/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="/Volumes/Data/Work/Outsourced/Treem-Android/Source/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-23.4.0_c7d6f23169f3f0d4f8f544de6174a53a951ac108.jar" />
+    </item>
+    <item
+        jar="/Users/Leopard/.gradle/caches/modules-2/files-2.1/com.googlecode.libphonenumber/libphonenumber/7.2.5/22a97009fd95d695e7eca930565bd3f261d4c6a3/libphonenumber-7.2.5.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="22a97009fd95d695e7eca930565bd3f261d4c6a3">
+        <dex dex="/Volumes/Data/Work/Outsourced/Treem-Android/Source/app/build/intermediates/pre-dexed/debug/libphonenumber-7.2.5_d55a0dd083ab8ee76dc7f62a823b25df1b7b901f.jar" />
+    </item>
+    <item
+        jar="/Volumes/Data/Work/Outsourced/Treem-Android/Source/app/build/intermediates/exploded-aar/com.androidplot/androidplot-core/0.9.8/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="614dc76ebb5d52053e3fc6572721873744524fb7">
+        <dex dex="/Volumes/Data/Work/Outsourced/Treem-Android/Source/app/build/intermediates/pre-dexed/debug/com.androidplot-androidplot-core-0.9.8_fa667e088a8c63e50909a4b41afcf23c7aaad80c.jar" />
+    </item>
+    <item
+        jar="/Volumes/Data/Work/Outsourced/Treem-Android/Source/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Volumes/Data/Work/Outsourced/Treem-Android/Source/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_b7facf147cf81017bc8935125c187baca83cd8e5.jar" />
+    </item>
+    <item
+        jar="/Volumes/Data/Work/Outsourced/Treem-Android/Source/app/libs/hexameter-core.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="0641ee4b8e3ee66500203a02550fd7fa9717a6d3">
+        <dex dex="/Volumes/Data/Work/Outsourced/Treem-Android/Source/app/build/intermediates/pre-dexed/debug/hexameter-core_019f480757fcb4d0e9cb32dbf3ca03a5c497358d.jar" />
+    </item>
+    <item
+        jar="/Volumes/Data/Work/Outsourced/Treem-Android/Source/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/Volumes/Data/Work/Outsourced/Treem-Android/Source/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_0655fbc0a40d3799b250b41f64d0931337843304.jar" />
+    </item>
+    <item
+        jar="/Users/Leopard/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.2.0/f7873a2ebde246a45c2a8d6f3247108b4c88a879/okhttp-3.2.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
+        <dex dex="/Volumes/Data/Work/Outsourced/Treem-Android/Source/app/build/intermediates/pre-dexed/debug/okhttp-3.2.0_780c67eeb84e33f10940b2ca240f8eeb66836b83.jar" />
+    </item>
+    <item
+        jar="/Volumes/Data/Work/Outsourced/Treem-Android/Source/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Volumes/Data/Work/Outsourced/Treem-Android/Source/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_d0fbeb36ce71773f33ce40ae54cf1720e2ee21a9.jar" />
+    </item>
+    <item
+        jar="/Volumes/Data/Work/Outsourced/Treem-Android/Source/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="/Volumes/Data/Work/Outsourced/Treem-Android/Source/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.4.0_7a1903d1fc2e864e8f0f6df28a4aeed13aa1e351.jar" />
+    </item>
+    <item
+        jar="/Users/Leopard/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.6.1/b9d63507329a7178e026fc334f87587ee5070ac5/gson-2.6.1.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="b9d63507329a7178e026fc334f87587ee5070ac5">
+        <dex dex="/Volumes/Data/Work/Outsourced/Treem-Android/Source/app/build/intermediates/pre-dexed/debug/gson-2.6.1_3e89fe70fdc61db9118e95763a3f47f223f51b36.jar" />
+    </item>
+    <item
+        jar="/Volumes/Data/Work/Outsourced/Treem-Android/Source/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Volumes/Data/Work/Outsourced/Treem-Android/Source/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_6918abf725bb267ae1e79da140e65fa40990c863.jar" />
+    </item>
+    <item
+        jar="/Users/Leopard/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Volumes/Data/Work/Outsourced/Treem-Android/Source/app/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_868b19dce8dee737eb1e6bd967f46fa4595d9f85.jar" />
+    </item>
+    <item
+        jar="/Volumes/Data/Work/Outsourced/Treem-Android/Source/app/libs/rxjava-1.1.5.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="ece7b5d0870e66d8226dab6dcf47a2b12afff061">
+        <dex dex="/Volumes/Data/Work/Outsourced/Treem-Android/Source/app/build/intermediates/pre-dexed/debug/rxjava-1.1.5_834611d4b28a06b94614d4c6aca468b34fac597d.jar" />
+    </item>
+    <item
+        jar="/Volumes/Data/Work/Outsourced/Treem-Android/Source/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="/Volumes/Data/Work/Outsourced/Treem-Android/Source/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.4.0_17bb09cfe5bd22491a433495538c80e5587a838d.jar" />
+    </item>
+    <item
+        jar="/Users/Leopard/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/Volumes/Data/Work/Outsourced/Treem-Android/Source/app/build/intermediates/pre-dexed/debug/okio-1.6.0_7404cfdc4d873e48c4265c0d277c1061b3f79420.jar" />
+    </item>
+    <item
+        jar="/Users/Leopard/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Volumes/Data/Work/Outsourced/Treem-Android/Source/app/build/intermediates/pre-dexed/debug/picasso-2.5.2_a5cc5715222601f36c61ca89d6198608b1f3c6cd.jar" />
+    </item>
+
+</items>

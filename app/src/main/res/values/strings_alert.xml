@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="alert_pending_friend_request"><![CDATA[You have a new friend request from <b>%s</b>]]></string>
+    <string name="alert_accepted_friend_request"><![CDATA[<b>%s</b> has accepted your friend request.]]></string>
+    <string name="alert_accepted_friend_invite"><![CDATA[<b>%s</b> has accepted your seed invitation to join Treem.]]></string>
+    <string name="alert_post_reply"><![CDATA[<b>%s</b> has responded to your post.]]></string>
+    <string name="alert_post_reaction"><![CDATA[<b>%s</b> has reacted to your post.]]></string>
+    <string name="alert_post_share"><![CDATA[<b>%s</b> has shared your post.]]></string>
+    <string name="alert_post_abuse_sent"><![CDATA[Your post has been reported.]]></string>
+    <string name="alert_post_abuse_revoked"><![CDATA[Your post has been removed due to being reported for abuse.]]></string>
+    <string name="alert_comment_reply"><![CDATA[<b>%s</b> commented on a post that you\'ve also commented on.]]></string>
+    <string name="alert_branch_share"><![CDATA[You have a new branch share offer from <b>%s</b>]]></string>
+    <string name="alert_post_upload_finished"><![CDATA[Your post has finished uploading.]]></string>
+    <string name="alert_chat_upload_finished"><![CDATA[Your chat message has finished uploading.]]></string>
+    <string name="alert_non_request"><![CDATA[]]></string>
+    <string name="alert_post_reply_reaction"><![CDATA[<b>%s</b> has reacted to your comment.]]></string>
+    <string name="alert_reply_upload_finished"><![CDATA[Your reply has finished uploading.]]></string>
+    <string name="alert_tagged_post"><![CDATA[<b>%s</b> has tagged you in a post.]]></string>
+    <string name="no_items_alert">You have no alerts</string>
+    <string name="no_items_invited">You have no friend requests</string>
+    <string name="no_items_branch">You have no branch share requests</string>
+    <string name="failed_set_alerts_read">Failed to set alerts as read: %s</string>
+    <string name="failed_alerts_remove">Failed to remove alerts: %s</string>
+    <string name="title_decline_branch">Decline Branch Share</string>
+    <string name="msg_decline_branch">Are you sure you want to decline the branch share offer?</string>
+    <string name="title_decline_friends">Decline Friend Request</string>
+    <string name="msg_decline_friends">Are you sure you want to decline the friend request?</string>
+    <string name="failed_decline_branch">Failed to decline branch share: %s</string>
+    <string name="error_not_implemented">This feature not yet implemented</string>
+    <string name="failed_accept_branch">Failed to accept branch share: %s</string>
+    <string name="error_branch_invalid_request_data">Invalid request data</string>
+    <string name="error_branch_invalid_tree_id">Invalid tree ID</string>
+    <string name="error_branch_invalid_placement">Invalid placement</string>
+    <string name="error_branch_invalid_source">Invalid source</string>
+    <string name="error_branch_exceeded_depth">Exceeded depth</string>
+    <string name="error_branch_exceeded_branches">Exceeded Branches</string>
+    <string name="error_branch_position_already_exists">Position already exists</string>
+    <string name="error_branch_invalid_share">Invalid share</string>
+    <string name="user_added">User added</string>
+    <string name="branch_added">Branch added</string>
+
+</resources>

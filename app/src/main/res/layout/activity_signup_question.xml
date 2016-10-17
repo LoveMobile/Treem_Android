@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Place in frame layout to support child layout adding -->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/signupQuestionFrameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/signupQuestionRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.treem.treem.activities.signup.SignupQuestionActivity"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="215dp"
+            android:layout_height="70dp"
+            android:id="@+id/imageView"
+            android:layout_alignParentTop="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/image_logo"
+            android:layout_marginBottom="15dp"
+            android:layout_alignParentLeft="true"
+            android:contentDescription="@string/treem"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/questionTextView"
+            android:layout_below="@+id/imageView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/dark_gray"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp" />
+
+        <ListView
+            android:choiceMode="singleChoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/answersListView"
+            android:divider="@color/divider"
+            android:dividerHeight="1dp"
+            android:nestedScrollingEnabled="false"
+            android:layout_below="@+id/questionTextView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false"
+            tools:listitem="@layout/activity_signup_question_row"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentRight="false"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signup_question_help_text"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/answersListView"
+            android:textAppearance="@style/HelpText"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/helpTextView" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signup_question_answer_different"
+            android:id="@+id/resendQuestionButton"
+            android:layout_below="@+id/helpTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            />
+    </RelativeLayout>
+</FrameLayout>

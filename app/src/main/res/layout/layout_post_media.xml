@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.treem.treem.widget.RatioFrameLayout
+    android:id="@+id/thumbnailFrame"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:auto_adjust="adjust_height">
+    <ImageView
+        android:id="@+id/empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/img_image"/>
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center_horizontal"
+        android:transitionName="thumbnail"
+        tools:ignore="ContentDescription,UnusedAttribute"/>
+</com.treem.treem.widget.RatioFrameLayout>

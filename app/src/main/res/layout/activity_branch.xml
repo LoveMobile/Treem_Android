@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.treem.treem.activities.branch.BranchActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:paddingEnd="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingStart="15dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:elevation="2dp">
+        <LinearLayout
+            android:id="@+id/toolbar_views"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/toolbar_home"
+                android:background="?attr/selectableItemBackground"
+                android:layout_width="@dimen/actionbar_icon_size"
+                android:layout_height="@dimen/actionbar_icon_size"
+                android:padding="@dimen/actionbar_icon_padding"
+                app:srcCompat="@drawable/ab_back_material"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/StyleToolbarTitle"
+                android:text="@string/toolbar_title_settings"/>
+            <ImageButton
+                android:id="@+id/toolbar_close"
+                android:background="?attr/selectableItemBackground"
+                android:layout_width="@dimen/actionbar_icon_size"
+                android:layout_height="@dimen/actionbar_icon_size"
+                android:padding="@dimen/actionbar_icon_padding"
+                app:srcCompat="@drawable/ic_action_cancel"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/branchTabsPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/branch_divider" />
+    <android.support.design.widget.TabLayout
+        android:id="@+id/branchTabs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/branch_tab_height"
+        app:tabBackground="@color/branch_tab_background"
+        app:tabIndicatorColor="@android:color/transparent"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="fixed"
+        app:tabGravity="fill"/>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- String values from signup area -->
+
+    <!-- Signup Question Activity -->
+    <string name="signup_question_answer_different">Answer Different Question</string>
+    <string name="signup_question_incorrect_answer_title">Incorrect Answer</string>
+    <string name="signup_question_incorrect_answer_message">The answer selected is incorrect. A new question will be loaded.</string>
+    <string name="signup_question_expired_title">Question Expired</string>
+    <string name="signup_question_expired_message">Current question has expired, a new one will be loaded.</string>
+    <string name="signup_question_help_text">Select the correct answer to prove you are human.</string>
+
+    <!-- Signup Phone Number Activity -->
+    <string name="signup_phone_number">Phone Number</string>
+    <string name="signup_phone_number_hint">Enter digits only</string>
+    <string name="signup_phone_help_text">Phone number must have SMS text messaging enabled for access.</string>
+    <string name="signup_phone_invalid_phone_number">Invalid phone number</string>
+
+
+    <!-- Signup Verification Activity -->
+    <string name="signup_verification_code">Signup Code</string>
+    <string name="signup_verification_hint">Enter code</string>
+    <string name="signup_verification_help_text">If a signup code has not been received at this number, try sending a new signup code.</string>
+    <string name="signup_verification_last_requested">Last requested at</string>
+    <string name="signup_verification_phone_number">Phone Number:</string>
+    <string name="signup_verification_send_new_code">Send New Signup Code</string>
+    <string name="signup_verification_failed_phone_unverified">The phone number unverified</string>
+
+    <!-- Signup register user activity -->
+    <string name="signup_register_hint_username">Enter a unique username</string>
+    <string name="signup_register_hint_first_name">Enter your first name</string>
+    <string name="signup_register_label_username">Username</string>
+    <string name="signup_register_label_first_name">First Name</string>
+    <string name="signup_register_label_last_name">Last Name</string>
+    <string name="signup_register_hint_last_name">Enter your last name</string>
+    <string name="signup_register_birthday">Birthday</string>
+    <string name="signup_register_select_you_birthday">Select you birthday</string>
+    <string name="signup_register_to_young_age">You need to be at least %d years old</string>
+</resources>

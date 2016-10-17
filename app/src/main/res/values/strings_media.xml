@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_load_video_details">Failed to load video details: %s</string>
+    <string name="error_empty_video_url">Video link is absent</string>
+    <string name="play_video">View video with&#8230;</string>
+    <string name="error_video_player_not_found">Video player not found</string>
+</resources>

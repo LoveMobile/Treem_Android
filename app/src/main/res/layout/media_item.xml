@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.treem.treem.widget.RatioFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:width_height_ratio="1"
+    app:auto_adjust="adjust_height">
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:transitionName="thumbnail"
+        android:scaleType="centerCrop"
+        tools:ignore="UnusedAttribute"/>
+    <ImageView
+        android:id="@+id/videoMark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_play_video"
+        android:visibility="gone"
+        />
+    <ProgressBar
+        android:id="@+id/progressLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_gravity="center"
+        android:theme="@style/DarkProgressBar"
+        android:visibility="gone"/>
+</com.treem.treem.widget.RatioFrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- String values for general application-wide text -->
+    <string name="app_name">Treem</string>
+    <string name="edit">Editar</string>
+    <string name="error">Error</string>
+    <string name="error_general_message">Se produjo un error al realizar la acción.</string>
+    <string name="next">Siguiente</string>
+    <string name="treem">Treem</string>
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			 android:layout_width="wrap_content"
+			 android:layout_height="wrap_content"
+			 android:orientation="vertical">
+
+	<TableRow>
+
+		<Button
+			android:id="@+id/edit"
+			style="@style/BranchActionButton"
+			android:drawableTop="@drawable/ic_edit"
+			android:text="@string/edit"/>
+
+		<Button
+			android:id="@+id/move"
+			style="@style/BranchActionButton"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp"
+			android:drawableTop="@drawable/ic_move"
+			android:text="@string/move"/>
+
+		<Button
+			android:id="@+id/delete"
+			style="@style/BranchActionButton"
+			android:drawableTop="@drawable/ic_trash"
+			android:text="@string/delete"/>
+
+	</TableRow>
+
+	<TableRow
+		android:layout_marginBottom="20dp"
+		android:layout_marginTop="20dp">
+
+		<Button
+			android:id="@+id/feed"
+			style="@style/BranchActionButton"
+			android:drawableTop="@drawable/ic_action_feed"
+			android:text="@string/feed"/>
+
+		<Button
+			android:id="@+id/members"
+			style="@style/BranchActionButton"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp"
+			android:drawableTop="@drawable/ic_action_members"
+			android:text="@string/members"/>
+
+		<Button
+			android:id="@+id/post"
+			style="@style/BranchActionButton"
+			android:drawableTop="@drawable/ic_action_post"
+			android:text="@string/post"/>
+
+	</TableRow>
+
+	<TableRow>
+
+		<Button
+			android:id="@+id/chat"
+			style="@style/BranchActionButton"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp"
+			android:drawableTop="@drawable/ic_action_chat"
+			android:text="@string/chat"/>
+
+		<Button
+			android:id="@+id/share"
+			style="@style/BranchActionButton"
+			android:drawableTop="@drawable/ic_action_share"
+			android:text="@string/share"/>
+
+		<Button
+			android:id="@+id/close"
+			style="@style/BranchActionButton"
+			android:drawableTop="@drawable/ic_action_close"
+			android:text="@string/close"/>
+
+	</TableRow>
+
+</TableLayout>

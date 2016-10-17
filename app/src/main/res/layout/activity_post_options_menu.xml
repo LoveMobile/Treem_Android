@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/rootView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.treem.treem.activities.branch.feed.PostOptionsMenuActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/post_margin_v"
+        android:paddingEnd="@dimen/main_margin_h"
+        android:paddingLeft="@dimen/main_margin_h"
+        android:paddingRight="@dimen/main_margin_h"
+        android:paddingStart="@dimen/main_margin_h">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="12dp">
+
+            <ImageView
+                android:layout_width="@dimen/post_button_icon_size"
+                android:layout_height="@dimen/post_button_icon_size"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_post_options"
+                android:tint="@color/post_options_tint"
+                android:transitionName="options"
+                tools:ignore="UnusedAttribute"/>
+        </FrameLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/main_margin_h"
+        android:paddingLeft="@dimen/main_margin_h"
+        android:paddingRight="@dimen/main_margin_h"
+        android:paddingStart="@dimen/main_margin_h">
+
+        <LinearLayout
+            android:id="@+id/option_who_can_see"
+            android:background="?attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/option_item_height"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/option_icon_size"
+                android:layout_height="@dimen/option_icon_size"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/ic_action_members"
+                android:tint="@color/option_tint"/>
+
+            <TextView
+                style="@style/StyleOptionItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option_who_can_see_this_post"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/option_reactions"
+            android:background="?attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/option_item_height"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/option_icon_size"
+                android:layout_height="@dimen/option_icon_size"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/ic_react_neutral"
+                android:tint="@color/option_tint"/>
+
+            <TextView
+                style="@style/StyleOptionItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option_reactions"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/option_edit"
+            android:background="?attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/option_item_height"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/option_icon_size"
+                android:layout_height="@dimen/option_icon_size"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/ic_edit"
+                android:tint="@color/option_tint"/>
+
+            <TextView
+                style="@style/StyleOptionItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option_edit_this_post"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/option_delete"
+            android:background="?attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/option_item_height"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/option_icon_size"
+                android:layout_height="@dimen/option_icon_size"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/ic_trash"
+                android:tint="@color/option_tint"/>
+
+            <TextView
+                style="@style/StyleOptionItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option_delete_this_post"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/option_report"
+            android:background="?attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/option_item_height"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/option_icon_size"
+                android:layout_height="@dimen/option_icon_size"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/ic_report"
+                android:tint="@color/option_tint"/>
+
+            <TextView
+                style="@style/StyleOptionItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option_report_this_post"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Non-selected row -->
+    <item
+        android:state_pressed="false"
+        android:state_selected="false"
+        android:drawable="@color/light_gray"
+        android:color="@color/dark_gray"
+        />
+
+    <!-- Selected row -->
+    <item
+        android:state_pressed="true"
+        android:drawable="@color/field_gray"
+        android:color="@color/white"
+        />
+    <item
+        android:state_selected="true"
+        android:drawable="@color/field_gray"
+        android:color="@color/white"
+        />
+
+</selector>

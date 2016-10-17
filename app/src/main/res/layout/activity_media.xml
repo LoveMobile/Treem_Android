@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.treem.treem.activities.media.MediaActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/media_toolbar_color"
+        android:paddingEnd="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingStart="15dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:elevation="2dp">
+
+        <LinearLayout
+            android:id="@+id/toolbar_views"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                style="@style/StyleToolbarTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/actionbar_icon_size"
+                android:layout_marginStart="@dimen/actionbar_icon_size"
+                android:layout_weight="1"
+                android:text="@string/toolbar_title_media"/>
+
+            <ImageButton
+                android:id="@+id/toolbar_close"
+                android:layout_width="@dimen/actionbar_icon_size"
+                android:layout_height="@dimen/actionbar_icon_size"
+                android:background="?attr/selectableItemBackground"
+                android:padding="@dimen/actionbar_icon_padding"
+                android:tint="@color/white"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_action_cancel"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/mediaRootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/itemsMedia"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/mediaNoItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_media_files"
+            style="@style/StyleNoItems"
+            android:visibility="gone"
+            android:layout_marginTop="60dp"/>
+
+    </FrameLayout>
+</LinearLayout>

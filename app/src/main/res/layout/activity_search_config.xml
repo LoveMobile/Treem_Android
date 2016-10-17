@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.treem.treem.activities.branch.BranchActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:paddingEnd="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingStart="15dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:elevation="2dp">
+
+        <LinearLayout
+            android:id="@+id/toolbar_views"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/toolbar_home"
+                android:layout_width="@dimen/actionbar_icon_size"
+                android:layout_height="@dimen/actionbar_icon_size"
+                android:background="?attr/selectableItemBackground"
+                android:padding="@dimen/actionbar_icon_padding"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/ab_back_material" />
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                style="@style/StyleToolbarTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/toolbar_title_settings" />
+
+            <ImageButton
+                android:id="@+id/toolbar_close"
+                android:layout_width="@dimen/actionbar_icon_size"
+                android:layout_height="@dimen/actionbar_icon_size"
+                android:background="?attr/selectableItemBackground"
+                android:padding="@dimen/actionbar_icon_padding"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/ic_action_cancel" />
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/main_margin_h"
+                android:layout_marginLeft="@dimen/main_margin_h"
+                android:layout_marginRight="@dimen/main_margin_h"
+                android:layout_marginStart="@dimen/main_margin_h"
+                android:layout_marginTop="@dimen/main_margin_v">
+
+                <TextView
+                    style="@style/StyleSearchTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:text="@string/search_options" />
+
+                <Button
+                    android:id="@+id/done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:padding="8dp"
+                    android:text="@string/done" />
+            </FrameLayout>
+
+            <TextView
+                style="@style/StyleSearchSectionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/main_margin_v"
+                android:layout_marginEnd="@dimen/main_margin_h"
+                android:layout_marginLeft="@dimen/main_margin_h"
+                android:layout_marginRight="@dimen/main_margin_h"
+                android:layout_marginStart="@dimen/main_margin_h"
+                android:layout_marginTop="@dimen/main_margin_v"
+                android:text="@string/matching" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/divider"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingEnd="@dimen/main_margin_h"
+                android:paddingLeft="@dimen/main_margin_h"
+                android:paddingRight="@dimen/main_margin_h"
+                android:paddingStart="@dimen/main_margin_h"
+
+                android:paddingTop="@dimen/main_margin_v_half">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/StyleSearchParam"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/search_matching_first" />
+
+                    <CheckBox
+                        android:id="@+id/searchMatchingFirst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:button="@drawable/checkbox"
+                        android:padding="8dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/StyleSearchParam"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/search_matching_phone" />
+
+                    <CheckBox
+                        android:id="@+id/searchMatchingPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:button="@drawable/checkbox"
+                        android:padding="8dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/divider"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingEnd="@dimen/main_margin_h"
+                android:paddingLeft="@dimen/main_margin_h"
+                android:paddingRight="@dimen/main_margin_h"
+                android:paddingStart="@dimen/main_margin_h"
+
+                android:paddingTop="@dimen/main_margin_v_half">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/StyleSearchParam"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/search_matching_last" />
+
+                    <CheckBox
+                        android:id="@+id/searchMatchingLast"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:button="@drawable/checkbox"
+                        android:padding="8dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/StyleSearchParam"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/search_matching_username" />
+
+                    <CheckBox
+                        android:id="@+id/searchMatchingUsername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:button="@drawable/checkbox"
+                        android:padding="8dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/divider"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/main_margin_v"
+                android:paddingEnd="@dimen/main_margin_h"
+                android:paddingLeft="@dimen/main_margin_h"
+                android:paddingRight="@dimen/main_margin_h"
+                android:paddingStart="@dimen/main_margin_h"
+                android:paddingTop="@dimen/main_margin_v_half">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/StyleSearchParam"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/search_matching_email" />
+
+                    <CheckBox
+                        android:id="@+id/searchMatchingEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:button="@drawable/checkbox"
+                        android:padding="8dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" />
+
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/StyleSearchSectionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/main_margin_v"
+                android:layout_marginEnd="@dimen/main_margin_h"
+                android:layout_marginLeft="@dimen/main_margin_h"
+                android:layout_marginRight="@dimen/main_margin_h"
+                android:layout_marginStart="@dimen/main_margin_h"
+                android:layout_marginTop="@dimen/main_margin_v"
+                android:text="@string/relationship" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/divider"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingEnd="@dimen/main_margin_h"
+                android:paddingLeft="@dimen/main_margin_h"
+                android:paddingRight="@dimen/main_margin_h"
+                android:paddingStart="@dimen/main_margin_h"
+
+                android:paddingTop="@dimen/main_margin_v_half">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/StyleSearchParam"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/search_rel_friends" />
+
+                    <CheckBox
+                        android:id="@+id/searchRelFriends"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:button="@drawable/checkbox"
+                        android:padding="8dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/StyleSearchParam"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/search_rel_invited" />
+
+                    <CheckBox
+                        android:id="@+id/searchRelInvited"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:button="@drawable/checkbox"
+                        android:padding="8dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/divider"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/main_margin_v_half"
+                android:paddingEnd="@dimen/main_margin_h"
+                android:paddingLeft="@dimen/main_margin_h"
+                android:paddingRight="@dimen/main_margin_h"
+                android:paddingStart="@dimen/main_margin_h"
+                android:paddingTop="@dimen/main_margin_v_half">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/StyleSearchParam"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/search_rel_pending" />
+
+                    <CheckBox
+                        android:id="@+id/searchRelPending"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:button="@drawable/checkbox"
+                        android:padding="8dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/StyleSearchParam"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/search_rel_not_friends" />
+
+                    <CheckBox
+                        android:id="@+id/searchRelNotFriends"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:button="@drawable/checkbox"
+                        android:padding="8dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/StyleSearchSectionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/main_margin_v"
+                android:layout_marginEnd="@dimen/main_margin_h"
+                android:layout_marginLeft="@dimen/main_margin_h"
+                android:layout_marginRight="@dimen/main_margin_h"
+                android:layout_marginStart="@dimen/main_margin_h"
+                android:layout_marginTop="@dimen/main_margin_v"
+                android:text="@string/miscellaneous" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/divider"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/main_margin_v_half"
+                android:paddingEnd="@dimen/main_margin_h"
+                android:paddingLeft="@dimen/main_margin_h"
+                android:paddingRight="@dimen/main_margin_h"
+                android:paddingStart="@dimen/main_margin_h"
+                android:paddingTop="@dimen/main_margin_v_half">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/StyleSearchParam"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/search_mel_show_contacts" />
+
+                    <CheckBox
+                        android:id="@+id/searchMelContacts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:button="@drawable/checkbox"
+                        android:padding="8dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" />
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/setDefaults"
+                android:layout_marginTop="@dimen/main_margin_v"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/set_default"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

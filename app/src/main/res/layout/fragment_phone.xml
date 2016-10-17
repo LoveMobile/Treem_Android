@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Place in frame layout to support child layout adding -->
+<LinearLayout
+    android:id="@+id/linearLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_gray"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/main_margin_h"
+        android:paddingLeft="@dimen/main_margin_h"
+        android:paddingRight="@dimen/main_margin_h"
+        android:paddingStart="@dimen/main_margin_h">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="10dp"
+                android:paddingTop="15dp"
+                android:text="@string/signup_phone_number"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <Button
+                android:id="@+id/buttonClose"
+                style="@style/ButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/close"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/phoneNumberEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="@string/signup_phone_number_hint"
+            android:inputType="phone"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:enabled="false"
+        android:paddingEnd="@dimen/main_margin_h"
+        android:paddingLeft="@dimen/main_margin_h"
+        android:paddingRight="@dimen/main_margin_h"
+        android:paddingStart="@dimen/main_margin_h"
+        android:text="@string/signup_phone_help_text"
+        android:textAppearance="@style/HelpText"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+
+        android:id="@+id/nextButton"
+        style="@style/ButtonSubmitTheme"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:enabled="false"
+        android:text="@string/next"
+        android:textSize="18sp"
+        />
+
+</LinearLayout>

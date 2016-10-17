@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="branch_title">All</string>
+    <string name="branch_tab_feed">Feed</string>
+    <string name="branch_tab_members">Members</string>
+    <string name="branch_tab_post">Post</string>
+    <string name="branch_tab_chat">Chat</string>
+    <string name="hint_search_members">Search name, email or phone</string>
+    <string name="title_read_contacts_describe_permissions">Read contacts permission</string>
+    <string name="msg_read_contacts_describe_permissions">App needs your permission for read contacts to search</string>
+    <string name="members_failed_load_data">Failed to load members: %s</string>
+    <string name="title_removing_members">Removing members from a branch</string>
+    <string name="msg_removing_members">De-selecting members from this list means that they will get removed from the branch upon hitting \'Save\'</string>
+    <string name="members_not_found_main">Couldn\'t find any users matching this search term. Would you like to invite them to join Treem via phone number?</string>
+    <string name="members_not_found_second">Invite someone to join Treem via phone number. Phone number must have SMS text messaging enabled to receive the invitation.</string>
+    <string name="invite">Invite</string>
+    <string name="seeding_failed_invite_user">Failed to invite user: %s</string>
+    <string name="search_options">Search Options</string>
+    <string name="done">Done</string>
+    <string name="matching">Matching</string>
+    <string name="search_matching_first">First Name</string>
+    <string name="search_matching_phone">Phone</string>
+    <string name="search_matching_last">Last Name</string>
+    <string name="search_matching_username">Username</string>
+    <string name="search_matching_email">Email</string>
+    <string name="relationship">Relationship</string>
+    <string name="search_rel_friends">Friends</string>
+    <string name="search_rel_invited">Invited</string>
+    <string name="search_rel_pending">Pending</string>
+    <string name="search_rel_not_friends">Not Friends</string>
+    <string name="miscellaneous">Miscellaneous</string>
+    <string name="search_mel_show_contacts">Show Contacts</string>
+    <string name="set_default">Set Default Settings</string>
+    <string name="add_user">Add member</string>
+    <string name="seeding_failed_add_user">Failed to add member: %s</string>
+    <string name="feeds_no_items">No posts have been added</string>
+
+</resources>

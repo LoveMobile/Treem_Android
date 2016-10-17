@@ -1,0 +1,88 @@
+<FrameLayout android:id="@+id/rootFeedsView"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/white"
+             tools:context="com.treem.treem.activities.branch.chat.BranchChatFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/feeds"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/noFeeds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/main_margin_v"
+            android:src="@drawable/post"
+            android:tint="@color/dark_gray"/>
+
+        <TextView
+            style="@style/StyleNoFeeds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/main_margin_v"
+            android:layout_marginEnd="@dimen/main_margin_h"
+            android:layout_marginLeft="@dimen/main_margin_h"
+            android:layout_marginRight="@dimen/main_margin_h"
+            android:layout_marginStart="@dimen/main_margin_h"
+            android:text="@string/feeds_no_items"/>
+
+        <TextView
+            style="@style/StyleNoFeedsDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/main_margin_h"
+            android:layout_marginLeft="@dimen/main_margin_h"
+            android:layout_marginRight="@dimen/main_margin_h"
+            android:layout_marginStart="@dimen/main_margin_h"
+            android:text="@string/feeds_no_items_description"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/errorLoading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/StyleNoFeeds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/main_margin_v"
+            android:layout_marginEnd="@dimen/main_margin_h"
+            android:layout_marginLeft="@dimen/main_margin_h"
+            android:layout_marginRight="@dimen/main_margin_h"
+            android:layout_marginStart="@dimen/main_margin_h"
+            android:text="@string/error_general_message"/>
+
+        <Button
+            android:id="@+id/buttonRetry"
+            style="@style/ButtonTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="16dp"
+            android:text="@string/retry"/>
+
+    </LinearLayout>
+
+</FrameLayout>

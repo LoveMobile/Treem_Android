@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/layoutImageViewRoot"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context="com.treem.treem.activities.media.ImageViewActivity">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:transitionName="thumbnail"
+        android:scaleType="fitCenter"
+        tools:ignore="UnusedAttribute"/>
+    <ImageButton
+        android:id="@+id/buttonClose"
+        android:layout_width="@dimen/actionbar_icon_size"
+        android:layout_height="@dimen/actionbar_icon_size"
+        android:background="?attr/selectableItemBackground"
+        android:padding="@dimen/actionbar_icon_padding"
+        android:tint="@color/white"
+        android:visibility="visible"
+        app:srcCompat="@drawable/ic_action_cancel"
+        android:layout_gravity="end|top"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="12dp"/>
+    <ImageButton
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:padding="@dimen/actionbar_icon_padding"
+        android:tint="@color/white"
+        android:visibility="visible"
+        app:srcCompat="@drawable/ic_trash"
+        android:layout_gravity="end|bottom"
+        android:layout_marginRight="@dimen/main_margin_h"
+        android:layout_marginEnd="@dimen/main_margin_h"
+        android:layout_marginBottom="@dimen/main_margin_v"/>
+
+</FrameLayout>

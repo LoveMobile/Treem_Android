@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="treem_response_code_success">Success</string>
+    <string name="treem_response_code_disabled_consumer_key">Disabled Consumer Key</string>
+    <string name="treem_response_code_disabled_oauth_token">Disabled OAuth Token (user’s access token)</string>
+    <string name="treem_response_code_invalid_user_token_passed">Invalid User Token passed</string>
+    <string name="treem_response_code_invalid_header">Invalid Header Value / Object (possibly missing parameters)</string>
+    <string name="treem_response_code_invalid_signature_method">Invalid Signature Method passed</string>
+    <string name="treem_response_code_request_was_used">Request has already been used</string>
+    <string name="treem_response_code_request_has_expired">Request has expired</string>
+    <string name="treem_response_code_invalid_consumer_key">Consumer Key was not found</string>
+    <string name="treem_response_code_invalid_signature">Invalid Signature passed, signature doesn\'t match the request</string>
+    <string name="treem_response_code_other_error">Other error</string>
+    <string name="treem_response_code_general">General response code: %d</string>
+    <string name="treem_response_code_verification_invalid_phone_number">Invalid phone number</string>
+    <string name="treem_response_code_registration_invalid_request_data">Invalid request data, search term (username) not in correct format</string>
+    <string name="treem_response_code_registration_user_already_exists">Username already exists to another user</string>
+    <string name="treem_response_code_registration_invalid_request_data_register">Invalid request object (missing parameters or formatted incorrectly)</string>
+    <string name="treem_response_code_registration_cant_be_called">User can\'t be called by this server</string>
+    <string name="treem_response_code_registration_user_name_alredy_exists_register">Username already exists</string>
+    <string name="treem_response_code_locked_out">Locked Out error</string>
+    <string name="treem_response_code_invalid_session">Invalid Session</string>
+    <string name="treem_response_code_verification_invalid_device_os">Invalid device OS</string>
+    <string name="treem_response_code_verification_invalid_signup_code">Check that the correct code was entered. If you requested a new code, make sure you are entering the latest one received.</string>
+</resources>

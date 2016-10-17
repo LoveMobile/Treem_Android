@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="upload_file_failed_invalid_request_data_object">Invalid request data object passed</string>
+    <string name="upload_file_failed_unsupported_file_type">Unsupported file type</string>
+    <string name="upload_file_failed_file_is_too_large">File is too large</string>
+    <string name="upload_file_failed_msg">Filed to upload file: %s</string>
+    <string name="upload_file_failed">Failed to upload image</string>
+    <string name="upload_file_failed_parse_image_file">Failed to parse image file</string>
+</resources>

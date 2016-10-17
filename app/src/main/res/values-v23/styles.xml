@@ -1,0 +1,14 @@
+<resources>
+	<!-- Base Treem App theme - API 23 + -->
+	<style name="AppTheme" parent="BaseTheme">
+		<item name="android:windowDrawsSystemBarBackgrounds">true</item>
+		<item name="android:statusBarColor">#FFFFFF</item>
+		<item name="android:windowLightStatusBar">true</item>
+	</style>
+
+	<style name="AppTheme.DarkStatus" parent="BaseTheme">
+		<item name="android:windowDrawsSystemBarBackgrounds">true</item>
+		<item name="android:statusBarColor">@color/ColorPrimaryBar</item>
+	</style>
+
+</resources>

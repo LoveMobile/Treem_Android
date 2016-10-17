@@ -1,0 +1,66 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="main_margin_h">10dp</dimen>
+    <dimen name="main_margin_v">15dp</dimen>
+    <dimen name="default_button_height">50dp</dimen>
+    <dimen name="actionbar_icon_size">32dp</dimen>
+    <dimen name="actionbar_icon_padding">4dp</dimen>
+    <dimen name="settings_row_height">48dp</dimen>
+    <dimen name="toolbar_text_size">18sp</dimen>
+    <dimen name="settings_row_text_size">16sp</dimen>
+    <dimen name="settings_tree_row_height">56dp</dimen>
+    <dimen name="settings_title_size">18sp</dimen>
+    <dimen name="settings_subtitle_size">14sp</dimen>
+    <dimen name="profile_avatar_size">160dp</dimen>
+    <dimen name="image_select_text_size">16sp</dimen>
+    <dimen name="reward_bar_height">20dp</dimen>
+    <dimen name="reward_mark_width_half">12dp</dimen>
+    <dimen name="reward_hexagon_size">112dp</dimen>
+    <dimen name="rewards_chart_height">112dp</dimen>
+    <dimen name="reward_title_text_size">22sp</dimen>
+    <dimen name="reward_description_text_size">12sp</dimen>
+    <dimen name="reward_percent_value_size">40dp</dimen>
+    <dimen name="reward_friends_text_size">14sp</dimen>
+    <dimen name="reward_percent_size">20dp</dimen>
+
+    <dimen name="no_items_text_size">22sp</dimen>
+    <dimen name="main_margin_v_half">8dp</dimen>
+    <dimen name="alert_adapter_image_size">64dp</dimen>
+    <dimen name="main_margin_h_half">5dp</dimen>
+    <dimen name="branch_tab_text_size">10dp</dimen>
+    <dimen name="branch_tab_height">52dp</dimen>
+    <dimen name="media_items_padding">4dp</dimen>
+    <dimen name="member_hexagon_size">12dp</dimen>
+    <dimen name="member_status_height">16dp</dimen>
+    <dimen name="member_adapter_image_size">48dp</dimen>
+    <dimen name="member_branch_color_size">6dp</dimen>
+    <dimen name="members_panel_image_size">32dp</dimen>
+    <dimen name="alert_small_text_size">14sp</dimen>
+    <dimen name="alert_big_text_size">18sp</dimen>
+    <dimen name="reward_radio_text_size">14sp</dimen>
+    <dimen name="profile_name_text_size">18sp</dimen>
+    <dimen name="profile_username_text_size">16sp</dimen>
+    <dimen name="profile_param_text_size">16sp</dimen>
+    <dimen name="member_standard_text_size">16sp</dimen>
+    <dimen name="member_small_text_size">14sp</dimen>
+    <dimen name="members_panel_text_size">16sp</dimen>
+    <dimen name="members_not_found_text_size">14sp</dimen>
+    <dimen name="search_title_text_size">16sp</dimen>
+    <dimen name="search_section_title_text_size">14sp</dimen>
+    <dimen name="search_param_text_size">14sp</dimen>
+
+    <dimen name="branch_color_option_border">2dp</dimen>
+    <dimen name="branch_button_action_margin_top">15dp</dimen>
+    <dimen name="feeds_divider_height">6dp</dimen>
+    <dimen name="post_avatar_size">48dp</dimen>
+    <dimen name="post_margin_v">8dp</dimen>
+    <dimen name="post_button_icon_size">20dp</dimen>
+    <dimen name="post_tagged_icon_size">12dp</dimen>
+    <dimen name="option_icon_size">24dp</dimen>
+    <dimen name="option_item_height">48dp</dimen>
+
+    <dimen name="actionBarSize">30dp</dimen>
+</resources>

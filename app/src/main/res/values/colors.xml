@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Define colors used throughout -->
+	<color name="dark_gray">#4E554D</color>
+	<color name="light_gray">#F5F5F5</color>
+    <color name="hint_color">#ff8e8e93</color>
+    <color name="white">#FFF</color>
+	<color name="divider">#EBEBEB</color>
+	<color name="divider_dark">#E0E0E0</color>
+	<color name="tint_color">#8CBE31</color>
+	<color name="stock_ticker_positive">#3D9600</color>
+	<color name="stock_ticker_negative">#960E00</color>
+	<color name="field_gray">#E1E1E1</color>
+	<color name="disabled_button_gray">#EBEBEB</color>
+	<color name="disabled_button_title_gray">#BCBEBC</color>
+	<color name="mid_gray">#BCBEBC</color>
+	<color name="sub_bar_background">#F5F5F5</color>
+	<color name="rewards_tint">#FFCC33</color>
+	<color name="tab_bar_icon">#9F9F9F</color>
+	<color name="sub_bar_fore">#5B615A</color>
+	<color name="error_text">#ffffa0a0</color>
+	<color name="ColorPrimaryBar">#354538</color>
+	<color name="SecondPrimaryBar">#87ba31</color>
+	<color name="DefaultTabColor">#78887b</color>
+	<color name="colorPrimary">@color/ColorPrimaryBar</color>
+	<color name="colorAccent">@color/tint_color</color>
+	<color name="toolbar_text_color">@color/white</color>
+	<color name="profile_button_change_background">#99ffffff</color>
+	<color name="profile_button_change_background_pressed">#33ffffff</color>
+	<color name="profile_error_text">#960E00</color>
+	<color name="mid_light_gray">#ffe1e1e1</color>
+    <color name="mid_dark_gray">#5B615A</color>
+	<color name="reward_bar_segment_1">#ff3b3154</color>
+	<color name="reward_bar_segment_2">#ff8a2020</color>
+	<color name="reward_bar_segment_3">#ffdf5d30</color>
+	<color name="reward_bar_segment_4">#ffe8b42c</color>
+	<color name="reward_bar_segment_5">#ff8cbe31</color>
+	<color name="branch_tab_background">#fffafafa</color>
+	<color name="branch_divider">#ffe1e1e1</color>
+	<color name="branch_tab_selected">@color/sub_bar_fore</color>
+	<color name="branch_tab">#ff929292</color>
+	<color name="media_toolbar_color">#ff668d3c</color>
+    <color name="selected_row_color">#338cbe31</color>
+    <color name="member_panel_gray">@color/mid_dark_gray</color>
+    <color name="red">#ffff0000</color>
+    <color name="post_action_tint">@color/mid_gray</color>
+    <color name="share_post_background">@color/light_gray</color>
+    <color name="share_post_stroke">@color/divider</color>
+    <color name="post_options_tint">@color/mid_light_gray</color>
+	<color name="hexagon_grid_overlay">#0d0d0d</color>
+    <color name="option_tint">@color/light_gray</color>
+
+</resources>
